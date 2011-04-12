@@ -1,8 +1,7 @@
-This repository contains *nix configuration files I commonly need on any
-host I login to. Feel free to view/copy them, in whole or part, for your
-personal use.
+This repository contains *nix configuration files I commonly need. Feel
+free to view/copy them, in whole or part, for your personal use.
 
-To deploy this configuration files on a host,
+To deploy these configuration files on a host,
 1. Login to host.
 2. Install git.
 3. Run: git clone git@github.com:ycombinator/dotfiles.git
