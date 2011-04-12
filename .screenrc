@@ -1,0 +1,17 @@
+shell -$SHELL
+#term screen-256color
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+#hardstatus string "%{.bW}%-w%{.gW}%n %t%{-}%+w %=%{..G} %0c"
+#hardstatus string "%{= KW}%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+caption always "%{= KW}%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %= %0c"
+vbell on
+vbellwait 1
+escape ^oo
+defscrollback 5000
+compacthist on
+#bindkey -k F1 prev
+#bindkey -k F2 next
+unsetenv SSH_AUTH_SOCK
+setenv SSH_AUTH_SOCK $HOME/.screen/ssh-auth-sock.$HOSTNAME
