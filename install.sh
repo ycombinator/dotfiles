@@ -12,7 +12,7 @@ for dotfile in \.*; do
 
 	  # Backup destination file if it already exists.
 	  if [ -f $dest_file ]; then
-      $backup_dest_file=$dest_file.bak.$current_date
+      backup_dest_file=$dest_file.bak.$current_date
 	    mv $dest_file $backup_dest_file
       echo "$dest_file already exists. Backing it up to $backup_dest_file"
 	  fi
