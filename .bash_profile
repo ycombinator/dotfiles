@@ -8,3 +8,9 @@ function parse_git_branch {
 export EDITOR="/usr/bin/emacs"
 export PATH="/usr/local/bin:$PATH"
 export PS1='\u@\h \[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch) $ '
+
+if [ -d ~/.profile.d ]; then
+    for f in $(ls ~/.profile.d/); do
+        source $f
+    done
+fi
