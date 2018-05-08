@@ -14,3 +14,7 @@ if [[ -d ~/.profile.d ]] && [[ $(ls ~/.profile.d/ | wc -l) -gt 0 ]]; then
         source $f
     done
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/shaunak/.sdkman"
+[[ -s "/Users/shaunak/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/shaunak/.sdkman/bin/sdkman-init.sh"
