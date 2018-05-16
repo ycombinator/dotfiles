@@ -1,0 +1,5 @@
+[user]
+	name = Shaunak Kashyap
+	email = ycombinator@gmail.com
+[alias]
+  pr = "!f() { git checkout -q master; git branch -Dq pr/$1; git fetch upstream pull/$1/head:pr/$1 && git checkout -q pr/$1; }; f"
