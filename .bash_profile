@@ -18,4 +18,3 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/shaunak/.sdkman"
 [[ -s "/Users/shaunak/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/shaunak/.sdkman/bin/sdkman-init.sh"
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
